@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #023;
+        }
+        
+        @media(min-width: 700px) {
+            .container {
+                width: 35%;
+                background: #666;
+                border-radius: 40px;
+                margin: 7% 0 0 25%;
+                height: 70vh;
+                border: 1px solid white;
+                text-align: center;
+                color: rgb(234, 238, 224);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        
+        @media(max-width: 699px) {
+            .container {
+                width: 90%;
+                background: #666;
+                border-radius: 20px;
+                margin: 7% 0 0 2%;
+                height: 85vh;
+                border: 1px solid white;
+                text-align: center;
+                color: rgb(247, 241, 246);
+                font-weight: bolder;
+                padding-left: 5px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        
+        .main {
+            width: 100%;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+        }
+        
+        a {
+            margin: 5% 4% 0 0;
+            background: #001;
+            text-align: center;
+            text-decoration: none;
+            line-height: 2;
+            width: 25%;
+            height: 12vh;
+            color: azure;
+            font-size: xx-large;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        
+        a:hover {
+            background: #353;
+        }
+        
+        a:active {
+            color: red;
+        }
+        
+        .name {
+            color: white;
+            float: right;
+            font-weight: bolder;
+            text-decoration: underline rgba(44, 248, 12, 0.707);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="header">TIC TAC TOE</h1>
+        <div class="main">
+            <ul>
+                <a href="#" class="list-item" id="spot1" onclick="tp(1)">+</a>
+                <a href="#" class="list-item" id="spot2" onclick="tp(2)">+</a>
+                <a href="#" class="list-item" id="spot3" onclick="tp(3)">+</a>
+            </ul>
+            <ul>
+                <a href="#" class="list-item" id="spot4" onclick="tp(4)">+</a>
+                <a href="#" class="list-item" id="spot5" onclick="tp(5)">+</a>
+                <a href="#" class="list-item" id="spot6" onclick="tp(6)">+</a>
+            </ul>
+            <ul>
+                <a href="#" class="list-item" id="spot7" onclick="tp(7)">+</a>
+                <a href="#" class="list-item" id="spot8" onclick="tp(8)">+</a>
+                <a href="#" class="list-item" id="spot9" onclick="tp(9)">+</a>
+            </ul>
+
+        </div>
+    </div>
+
+    <h1 class="name">Firoz Khan</h1>
+    <script src="f1.js"></script>
+</body>
+
+</html>
